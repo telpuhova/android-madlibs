@@ -27,7 +27,7 @@
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Brother" />
+        android:text="Run" />
 
     <EditText
         android:id="@+id/editText2"
@@ -36,7 +36,7 @@
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="cute"
+        android:text="fast"
         android:layout_below="@+id/editText1"
         android:layout_alignLeft="@+id/editText1"
         android:layout_alignStart="@+id/editText1" />
@@ -48,7 +48,7 @@
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="bad"
+        android:text="friends"
         android:layout_below="@+id/editText2"
         android:layout_alignLeft="@+id/editText2"
         android:layout_alignStart="@+id/editText2" />
@@ -60,7 +60,7 @@
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="stupid"
+        android:text="dogs"
         android:layout_below="@+id/editText3"
         android:layout_alignLeft="@+id/editText3"
         android:layout_alignStart="@+id/editText3" />
@@ -72,7 +72,7 @@
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="dog"
+        android:text="chairs"
         android:layout_below="@+id/editText4"
         android:layout_alignLeft="@+id/editText4"
         android:layout_alignStart="@+id/editText4" />
@@ -84,7 +84,7 @@
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="house"
+        android:text="uncles"
         android:layout_below="@+id/editText5"
         android:layout_alignLeft="@+id/editText5"
         android:layout_alignStart="@+id/editText5" />
@@ -96,7 +96,7 @@
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="coffee"
+        android:text="slow"
         android:layout_below="@+id/editText6"
         android:layout_alignLeft="@+id/editText6"
         android:layout_alignStart="@+id/editText6" />
@@ -111,7 +111,7 @@
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Steve" />
+        android:text="drugs" />
 
     <TextView
         android:id="@+id/inputLabel1"
@@ -119,7 +119,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="31dp"
         android:layout_marginStart="31dp"
-        android:text="Relative:"
+        android:text="Verb:"
         android:layout_alignBaseline="@+id/editText1"
         android:layout_alignBottom="@+id/editText1"
         android:layout_alignParentLeft="true"
@@ -139,7 +139,7 @@
         android:id="@+id/inputLabel3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Adjective: "
+        android:text="Noun (Plural): "
         android:layout_alignBaseline="@+id/editText3"
         android:layout_alignBottom="@+id/editText3"
         android:layout_alignLeft="@+id/inputLabel1"
@@ -149,7 +149,7 @@
         android:id="@+id/inputLabel4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Adjective: "
+        android:text="Noun (Plural): "
         android:layout_alignBaseline="@+id/editText4"
         android:layout_alignBottom="@+id/editText4"
         android:layout_alignLeft="@+id/inputLabel1"
@@ -159,7 +159,7 @@
         android:id="@+id/inputLabel5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Noun: "
+        android:text="Noun (Plural): "
         android:layout_alignBaseline="@+id/editText5"
         android:layout_alignBottom="@+id/editText5"
         android:layout_alignLeft="@+id/inputLabel1"
@@ -169,7 +169,7 @@
         android:id="@+id/inputLabel6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Noun: "
+        android:text="Relative (Plural): "
         android:layout_alignBaseline="@+id/editText6"
         android:layout_alignBottom="@+id/editText6"
         android:layout_alignLeft="@+id/inputLabel1"
@@ -179,7 +179,7 @@
         android:id="@+id/inputLabel7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Noun: "
+        android:text="Adjective: "
         android:layout_alignBaseline="@+id/editText7"
         android:layout_alignBottom="@+id/editText7"
         android:layout_alignLeft="@+id/inputLabel1"
@@ -189,7 +189,7 @@
         android:id="@+id/inputLabel8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name:"
+        android:text="Noun (Plural):"
         android:layout_alignBaseline="@+id/editText8"
         android:layout_alignBottom="@+id/editText8"
         android:layout_alignLeft="@+id/inputLabel1"

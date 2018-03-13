@@ -7,29 +7,24 @@
     tools:context="com.epicodus.madlibs.ResultsActivity">
 
     <TextView
-        android:id="@+id/nounTextView"
+        android:id="@+id/finishedStory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp"
-        android:text="noun" />
+        android:layout_marginTop="41dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Letter from camp" />
 
-    <TextView
-        android:id="@+id/adjectiveTextView"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/tryAgainButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Try again!"
+        android:background="@color/colorPrimaryLight"/>
 
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="121dp"
-        android:text="adjective" />
-
-    <TextView
-        android:id="@+id/verbTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="126dp"
-        android:text="verb"
-        android:layout_below="@+id/adjectiveTextView"
-        android:layout_centerHorizontal="true" />
 </RelativeLayout>

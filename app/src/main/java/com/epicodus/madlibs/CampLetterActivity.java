@@ -10,8 +10,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 import butterknife.Bind;
-
-public class InputActivity extends AppCompatActivity {
+public class CampLetterActivity extends AppCompatActivity {
 
     @Bind(R.id.editText1) EditText mEditText1;
     @Bind(R.id.editText2) EditText mEditText2;
@@ -27,6 +26,7 @@ public class InputActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input);
 
@@ -44,15 +44,15 @@ public class InputActivity extends AppCompatActivity {
                 String editText6 = mEditText6.getText().toString();
                 String editText7= mEditText7.getText().toString();
                 String editText8 = mEditText8.getText().toString();
-                Intent intent = new Intent(InputActivity.this, ResultsActivity.class);
-                intent.putExtra("editText1", editText1);
-                intent.putExtra("editText2", editText2);
-                intent.putExtra("editText3", editText3);
-                intent.putExtra("editText4", editText4);
-                intent.putExtra("editText5", editText5);
-                intent.putExtra("editText6", editText6);
-                intent.putExtra("editText7", editText7);
-                intent.putExtra("editText8", editText8);
+                Intent intent = new Intent(CampLetterActivity.this, ResultsActivity.class);
+
+                String str = "Dear " + editText1 +",\n" +
+                        "I am having a(n) " + editText2 + " time at camp. The counselour is " + editText3 + " and the food is " + editText4 + ". I need more " + editText5 + " and a " + editText6 +".\n" +
+                        "Your " + editText7 + ",\n" +
+                        editText8 + "\t";
+
+
+                intent.putExtra("story", str);
                 startActivity(intent);
             }
         });

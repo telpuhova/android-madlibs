@@ -6,12 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-import butterknife.Bind;
-
-public class InputActivity extends AppCompatActivity {
+public class WashActivity extends AppCompatActivity {
 
     @Bind(R.id.editText1) EditText mEditText1;
     @Bind(R.id.editText2) EditText mEditText2;
@@ -21,14 +20,12 @@ public class InputActivity extends AppCompatActivity {
     @Bind(R.id.editText6) EditText mEditText6;
     @Bind(R.id.editText7) EditText mEditText7;
     @Bind(R.id.editText8) EditText mEditText8;
-
     @Bind(R.id.submitButton) Button mSubmitButton;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_input);
+        setContentView(R.layout.activity_wash);
 
         ButterKnife.bind(this);
 
@@ -44,15 +41,14 @@ public class InputActivity extends AppCompatActivity {
                 String editText6 = mEditText6.getText().toString();
                 String editText7= mEditText7.getText().toString();
                 String editText8 = mEditText8.getText().toString();
-                Intent intent = new Intent(InputActivity.this, ResultsActivity.class);
-                intent.putExtra("editText1", editText1);
-                intent.putExtra("editText2", editText2);
-                intent.putExtra("editText3", editText3);
-                intent.putExtra("editText4", editText4);
-                intent.putExtra("editText5", editText5);
-                intent.putExtra("editText6", editText6);
-                intent.putExtra("editText7", editText7);
-                intent.putExtra("editText8", editText8);
+                Intent intent = new Intent(WashActivity.this, ResultsActivity.class);
+
+                String str = "In order to wash your face " + editText1 +"," +
+                        " you must wet your " + editText2 + " in warm " + editText3 + ". Then, " + editText4 + " it across your face " + editText5 + " times. This will wash off any remaining " + editText6 +". " +
+                        "When you are done you should " + editText7 + " the cloth in " +
+                        editText8 + " water to clean it.";
+
+                intent.putExtra("story", str);
                 startActivity(intent);
             }
         });
