@@ -12,7 +12,7 @@ An android application, that lets user play one of suggested games of madlibs.
 
 * clone repository
 ```
-$ git clone https://github.com/telpuhova/habit-tracker.git
+$ git clone https://github.com/telpuhova/android-madlibs.git
 ```
 * open the repository with Android Studio
 * set up a virtual android device (or connect your phone)
